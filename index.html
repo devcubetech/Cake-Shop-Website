@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blissful Bakes | Artisan Cake Boutique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-crown"></i>
+                <h1>Blissful Bakes</h1>
+            </div>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#cake-book">Cakes</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon" id="cartIcon">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Where Every <span>Cake</span> Tells a Story</h1>
+                <p>Handcrafted artisan cakes made with passion and the finest ingredients for your most cherished moments. Experience the perfect blend of taste and artistry.</p>
+                <div>
+                    <a href="#cake-book" class="btn">Explore Collection</a>
+                    <a href="#contact" class="btn btn-secondary">Custom Design</a>
+                </div>
+                <div class="hero-badge">
+                    <i class="fas fa-shipping-fast"></i>
+                    Free delivery on orders over ₹5000
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury cake">
+            </div>
+        </div>
+    </section>
+
+    <!-- Cake Book Section -->
+    <section id="cake-book">
+        <div class="section-title">
+            <h2>Our Signature Creations</h2>
+        </div>
+        <div class="categories">
+            <button class="category-btn active" data-category="all">All Cakes</button>
+            <button class="category-btn" data-category="birthday">Birthday</button>
+            <button class="category-btn" data-category="wedding">Wedding</button>
+            <button class="category-btn" data-category="anniversary">Anniversary</button>
+            <button class="category-btn" data-category="custom">Signature</button>
+        </div>
+        <div class="cake-grid" id="cakeGrid">
+            <!-- Cakes will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1559715541-5daf8a0296d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cake Shop Interior">
+            </div>
+            <div class="about-content">
+                <h2>Our Sweet Journey</h2>
+                <p>Founded in 2010, Blissful Bakes began as a passion project in a cozy home kitchen. Our founder, Isabella Rossi, combined her love for baking with her background in fine arts to create cakes that were not just desserts, but edible masterpieces.</p>
+                <p>Today, our boutique bakery in the heart of the city continues this tradition of excellence. Each cake is a labor of love, crafted with premium ingredients, seasonal flavors, and meticulous attention to detail.</p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-award"></i>
+                        <div>
+                            <h4>Premium Ingredients</h4>
+                            <p>Locally sourced & organic</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-palette"></i>
+                        <div>
+                            <h4>Artistic Designs</h4>
+                            <p>Custom creations for you</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-leaf"></i>
+                        <div>
+                            <h4>Eco-Friendly</h4>
+                            <p>Sustainable packaging</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-heart"></i>
+                        <div>
+                            <h4>Made with Love</h4>
+                            <p>Passionate bakers</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#contact" class="btn">Visit Our Bakery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="section-title">
+            <h2>Sweet Praise</h2>
+        </div>
+        <div class="testimonial-container">
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">The wedding cake from Blissful Bakes was the highlight of our special day! Not only was it stunning, but the flavors were absolutely divine. Our guests are still raving about it months later.</p>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Sophie Williams">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sophie Williams</h4>
+                            <p>Wedding Client</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">I've ordered from Blissful Bakes for three birthdays in a row now. Each cake has been more spectacular than the last. The attention to detail is unmatched and the taste is heavenly!</p>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Raj Patel">
+                        </div>
+                        <div class="author-info">
+                            <h4>Raj Patel</h4>
+                            <p>Regular Customer</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Our 25th anniversary cake was breathtaking! The flavor combination of raspberry and dark chocolate was extraordinary. The design was exactly what we envisioned. Worth every penny!</p>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Priya Sharma">
+                        </div>
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Anniversary Celebration</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">The wedding cake from Blissful Bakes was the highlight of our special day! Not only was it stunning, but the flavors were absolutely divine. Our guests are still raving about it months later.</p>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Sophie Williams">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sophie Williams</h4>
+                            <p>Wedding Client</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Blissful Bakes</h3>
+                <p>Creating edible art since 2010. We specialize in custom cakes for all occasions, made with love and premium ingredients.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#cake-book"><i class="fas fa-chevron-right"></i> Cake Collection</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Demo Location</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>Demo Number</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>Demo Email</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Sat: 9AM - 8PM, Sun: 10AM - 6PM</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 <a href="https://www.devcubetech.com/">Dev Cube Tech</a>. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h3>Your Sweet Cart</h3>
+            <button class="close-cart" id="closeCart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be populated by JavaScript -->
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">₹0.00</span>
+        </div>
+        <div class="cart-actions">
+            <button class="checkout-btn">Proceed to Checkout</button>
+            <button class="continue-btn" id="continueShopping">Continue Shopping</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
